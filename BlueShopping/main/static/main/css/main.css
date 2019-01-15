@@ -49,6 +49,7 @@ div
 ul#menu {
   margin-bottom: 30px;
   text-align: right;
+  list-style-type:none
 }
 
 ul#menu li {
