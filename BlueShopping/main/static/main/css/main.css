@@ -1,0 +1,55 @@
+*{
+	box-sizeing:border-box;
+}
+html, body{
+	height:100%;
+	margin:0%:
+}
+body{
+	text-align:center;
+	height:100%;
+	width:100%;
+}
+div
+#wrapper{
+	margin: 0 about;
+		height:1000px;
+	width:1000px;
+	border: 2px solider black;
+	text-align:center;
+}
+nav {
+	height: 100%;
+	width: 100%;
+	border: 2px solid black;
+	text-align:center;
+}
+logo{
+	text-align:right;
+}
+header{
+	height:30%;
+	border: 2px solid black;
+}
+aside{
+	width: 20%;
+	height:50%;
+	border: 2px solid black;
+	text-align:left;
+	float: left;
+}
+div
+#content{
+	width:75%;
+	height:50%;
+	border: 2px solid black;
+	float: left;
+}
+ul#menu {
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+ul#menu li {
+  display: inline-block;
+}

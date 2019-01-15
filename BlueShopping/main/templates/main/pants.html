@@ -1,0 +1,39 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Blue Shopping</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+  </head>
+  <body>
+  <div id="nav">
+  <h1><a href="#top">BlueShopping</a></h1>
+  		<a href="{% url 'main:main' %}";style="text-align:right">登入</a>
+
+  <header>
+  <marquee direction="right" height="50" scrollamount="10" behavior="alternate">
+  Nice to meet you！！！</marquee>
+  </header><br>
+  <aside>
+  <div id="aside">
+  	<ul style="list-style-type:none">
+  	<li><a href="{% url 'main:cloth' %}">衣服</a></li><br>
+  	<li><a href="{% url 'main:pants' %}">褲子</a></li><br>
+  	<li><a href="{% url 'main:cap' %}">帽子</a></li><br>
+  	<li><a href="{% url 'main:thing' %}">其他</li><br>
+  	</ul>
+  </div>
+  <div id="aside">
+   <br><br><br> 
+     <ul style="list-style-type:none">
+     <li><a href="{% url 'main:contact' %}">聯絡我們</a></li></ul>
+  </div>
+  </aside>
+  <div id="content">
+ 	 <h1>褲子</h1>
+  </div>
+  </div>
+    <p>{{ like }}</p>
+  </body>
+</html>
