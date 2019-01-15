@@ -3,12 +3,12 @@
 }
 html, body{
 	height:100%;
-	margin:0%:
 }
 body{
-	text-align:center;
-	height:100%;
+	margin: 0 auto;
 	width:100%;
+	border: 1px solid black;
+	
 }
 div
 #wrapper{
@@ -20,9 +20,9 @@ div
 }
 nav {
 	height: 100%;
-	width: 100%;
-	border: 2px solid black;
-	text-align:center;
+	margin: 0 about;
+	border: 2px solid blue;
+	
 }
 logo{
 	text-align:right;
@@ -33,17 +33,18 @@ header{
 }
 aside{
 	width: 20%;
-	height:50%;
+	height:70%;
 	border: 2px solid black;
 	text-align:left;
 	float: left;
 }
 div
 #content{
-	width:75%;
-	height:50%;
+	width:79.5%;
+	height:70%;
 	border: 2px solid black;
 	float: left;
+	text-align:center;
 }
 ul#menu {
   margin-bottom: 30px;
