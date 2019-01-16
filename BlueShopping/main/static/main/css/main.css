@@ -12,24 +12,22 @@ body{
 }
 div
 #wrapper{
-	margin: 0 about;
-		height:1000px;
-	width:1000px;
-	border: 2px solider black;
-	text-align:center;
+  margin: 0 auto;
+  width: 1000px;
+  height:1000px;
+  border: 2px solid black;
 }
-nav {
-	height: 100%;
-	margin: 0 about;
-	border: 2px solid blue;
-	
-}
-logo{
-	text-align:right;
+nav{
+	height: 10%;
+	margin: 0 auto;
+	border: 2px solid black;
 }
 header{
-	height:30%;
-	border: 2px solid black;
+	height:10%;
+	width: 100%;
+	margin: 0 auto;
+	boder: 2px solid black;
+	
 }
 aside{
 	width: 20%;
@@ -38,8 +36,7 @@ aside{
 	text-align:left;
 	float: left;
 }
-div
-#content{
+div#content{
 	width:79.5%;
 	height:70%;
 	border: 2px solid black;
@@ -54,4 +51,5 @@ ul#menu {
 
 ul#menu li {
   display: inline-block;
+  text-align:center;
 }

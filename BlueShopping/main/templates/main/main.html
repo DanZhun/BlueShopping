@@ -7,16 +7,23 @@
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
   </head>
   <body>
+  <nav>
   <div id="nav">
-  <h1><a href="{% url 'main:main' %}">BlueShopping</a></h1>
-  <ul id="menu">
-  		<li><a href="{% url 'main:main' %}";style="text-align:right">登入</a></li>
-	</ul>
-  <header>
-  <marquee direction="right" height="50" scrollamount="10" behavior="alternate">
-  Nice to meet you！！！</marquee>
-  </header><br>
+ <h1>
+   <ul id="menu">
+<a href="{% url 'main:main' %}">
+<img src="{% static 'main/img/logo1.png' %}" title="main" alt="BlueShopping" ></a>
+
+  <li><a href="{% url 'main:main' %}">登入</a></li>
+  </ul>
+	</div></nav>
+<header>
+<div id="header">
+  <h1><marquee direction="right" height="50" scrollamount="10" behavior="alternate">
+  Nice to meet you！！！</marquee></h1></div></header>
+  <br>
   <aside>
+  <h1>
   <div id="aside">
   	<ul style="list-style-type:none">
   	<li><a href="{% url 'main:cloth' %}">衣服</a></li><br>
@@ -24,12 +31,12 @@
   	<li><a href="{% url 'main:cap' %}">帽子</a></li><br>
   	<li><a href="{% url 'main:thing' %}">其他</li><br>
   	</ul>
-  </div>
+  </h1></div>
   <div id="aside">
-   <br><br><br> 
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h1>
      <ul style="list-style-type:none">
      <li><a href="{% url 'main:contact' %}">聯絡我們</a></li></ul>
-  </div>
+  </h1></div>
   </aside>
   <div id="content">
  	 <h1>主頁</h1>
