@@ -31,11 +31,6 @@ def contact(request):
     Render the about page
     '''
     return render(request, 'main/contact.html')
-def mained(request):
-    '''
-    Render the mained page
-    '''
-    return render(request, 'mained/mained.html')
 def clothed(request):
     '''
     Render the clothed page
@@ -61,11 +56,11 @@ def contacted(request):
     Render the contact page
     '''
     return render(request, 'mained/contacted.html')
-def register(request):
+def mained(request):
     '''
-    Render the register page
+    Render the mained page
     '''
-    return render(request, 'register/register.html')
+    return render(request, 'mained/mained.html')
 def add(request):
     '''
     Render the add page
@@ -76,8 +71,3 @@ def login(request):
     Render the login page
     '''
     return render(request, 'login/login.html')
-def logined(request):
-    '''
-    Render the logined page
-    '''
-    return render(request, 'logined/logined.html')    

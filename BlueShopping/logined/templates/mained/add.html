@@ -1,0 +1,53 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Blue Shopping</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+  </head>
+  <body>
+  <nav>
+  <div id="nav">
+ <h1>
+   <ul id="menu">
+<a href="{% url 'mained:mained' %}">
+<img src="{% static 'main/img/logo1.png' %}" title="main" alt="BlueShopping" ></a>
+  <li><a href="{% url 'main:main' %}">登出</a></li>
+  </ul>
+  </div></nav>
+<header>
+<div id="header">
+  <h1><marquee direction="right" height="50" scrollamount="10" behavior="alternate">
+  Nice to meet you！！！</marquee></h1></div></header>
+  <br>
+  <aside>
+  <h1>
+  <div id="aside">
+    <ul style="list-style-type:none">
+    <li><a href="{% url 'mained:mained' %}">新增商品</a></li><br>
+    </ul>
+  </h1></div>
+  <div id="aside">
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h1>
+     <ul style="list-style-type:none">
+     <li><a href="{% url 'mained:contacted' %}">聯絡我們</a></li></ul>
+  </h1></div>
+  </aside>
+  <div id="content">
+  <h3><label for="good">商品名稱:</label></h3>
+  <input type="text" name="good" value="" id="good"> <br />
+  <h3><label for="kind">商品種類:</label></h3>
+  <select name=kind>
+  <option value=ture>衣服 </option>
+  <option value=true>褲子</option>
+  <option value=ture>帽子 </option>
+  <option value=ture>其他 </option>
+</select><br />
+  <h3><label for="write">商品描述:</label></h3>
+ <textarea rows=20 px cols=100 px name="write"></textarea>
+  </div>
+  </div>
+    <p>{{ like }}</p>
+  </body>
+</html>

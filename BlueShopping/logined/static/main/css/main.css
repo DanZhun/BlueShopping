@@ -1,0 +1,55 @@
+*{
+	box-sizeing:border-box;
+}
+html, body{
+	height:100%;
+}
+body{
+	margin: 0 auto;
+	width:100%;
+	border: 1px solid black;
+	
+}
+div
+#wrapper{
+  margin: 0 auto;
+  width: 1000px;
+  height:1000px;
+  border: 2px solid black;
+}
+nav{
+	height: 10%;
+	margin: 0 auto;
+	border: 2px solid black;
+}
+header{
+	height:10%;
+	width: 100%;
+	margin: 0 auto;
+	boder: 2px solid black;
+	
+}
+aside{
+	width: 20%;
+	height:70%;
+	border: 2px solid black;
+	text-align:left;
+	float: left;
+}
+div#content{
+	width:79.5%;
+	height:70%;
+	border: 2px solid black;
+	float: left;
+	text-align:center;
+}
+ul#menu {
+  margin-bottom: 30px;
+  text-align: right;
+  list-style-type:none
+}
+
+ul#menu li {
+  display: inline-block;
+  text-align:center;
+}

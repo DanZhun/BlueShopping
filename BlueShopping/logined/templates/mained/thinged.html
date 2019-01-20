@@ -10,13 +10,12 @@
   <nav>
   <div id="nav">
  <h1>
-   <ul id="menu">
-<a href="{% url 'main:main' %}">
-<img src="{% static 'main/img/logo1.png' %}" title="main" alt="BlueShopping" ></a>
-
-  <li><a href="{% url 'login:login' %}">登入</a></li>
+ <ul id="menu">
+<li><a href="{% url 'mained:mained' %}">
+  <img src="{% static 'main/img/logo1.png' %}" title="main" alt="BlueShopping" ></a></li>
+  <li><a href="{% url 'main:main' %}">登出</a></li>
   </ul>
-  </div></nav>
+	</div></nav>
 <header>
 <div id="header">
   <h1><marquee direction="right" height="50" scrollamount="10" behavior="alternate">
@@ -25,21 +24,21 @@
   <aside>
   <h1>
   <div id="aside">
-    <ul style="list-style-type:none">
-    <li><a href="{% url 'main:cloth' %}">衣服</a></li><br>
-    <li><a href="{% url 'main:pants' %}">褲子</a></li><br>
-    <li><a href="{% url 'main:cap' %}">帽子</a></li><br>
-    <li><a href="{% url 'main:thing' %}">其他</li><br>
-    </ul>
+  	<ul style="list-style-type:none">
+  	<li><a href="{% url 'mained:clothed' %}">衣服</a></li><br>
+  	<li><a href="{% url 'mained:pantsed' %}">褲子</a></li><br>
+  	<li><a href="{% url 'mained:caped' %}">帽子</a></li><br>
+  	<li><a href="{% url 'mained:thinged' %}">其他</li><br>
+  	</ul>
   </h1></div>
   <div id="aside">
    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h1>
      <ul style="list-style-type:none">
-     <li><a href="{% url 'main:contact' %}">聯絡我們</a></li></ul>
+     <li><a href="{% url 'mained:contacted' %}">聯絡我們</a></li></ul>
   </h1></div>
   </aside>
   <div id="content">
-   <h1>主頁</h1>
+ 	 <h1>其他</h1>
   </div>
   </div>
     <p>{{ like }}</p>

@@ -1,0 +1,26 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Blue Shopping</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+  </head>
+  <body>
+          <h3>註冊新帳號</h3>
+            <form action="" method="post">
+            <label for="username">用戶名稱:</label>
+            <input type="text" name="username" value="" id="username"> <br />
+            <label for="text">用戶密碼:</label>
+            <input type="text" name="password" value="" id="password"> <br />
+            <label for="date">生日:</label>
+            <input type="date" name="date" value="" id="date"> <br />
+            <label for="phone">電話:</label>
+            <input type="text" name="phone" value="" id="phone"> <br />
+            <label for="email">信箱:</label>
+            <input type="text" name="email" value="" id="email"> <br />
+            <label for="address">地址:</label>
+            <input type="text" name="address" value="" id="address"> <br />
+            <input <a href="{% url 'login:login' %}" type="submit" value=註冊></a
+  </body>
+  </html>
