@@ -6,19 +6,20 @@
     <meta charset="utf-8">
   </head>
   <body>
+  <a href="{% url 'main:main' %}">
+  <img src="{% static 'main/img/logo1.png' %}" title="main" alt="BlueShopping" ></a></li>
+<br><br>
   <nav>
   <div id="nav">
    <form action="" method="post">
             <label for="username">用戶名稱:</label>
             <input type="text" name="username" value="" id="username"> <br />
-            <label for="password">用戶密碼:</label>
+            <br><label for="password">用戶密碼:</label>
             <input type="password" name="password" value="" id="password"> <br />
-            <input type="submit" value="登入" />
+           <br> <input type="submit" value="登入" />
     </form>
  <h1>
  <ul id="menu">
-<li><a href="{% url 'main:main' %}">
-  <img src="{% static 'main/img/logo1.png' %}" title="main" alt="BlueShopping" ></a></li>
   <li><a href="{% url 'register:register' %}">註冊</a></li>
    <li><a href="{% url 'mained:mained' %}">登入</a></li>
   </ul>

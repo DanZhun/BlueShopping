@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="{% static 'main/css/contact.css' %}">
   </head>
   <body>
-  <ul style="list-style-type:none">
-      <li><a href="{% url 'mained:mained' %}">首頁</a></li>
-      <li><a href="{% url 'main:main' %}">登出</a></li> 
-    </ul>
+  <a href="{% url 'main:main' %}">
+  <img src="{% static 'main/img/logo1.png' %}" title="main" alt="BlueShopping" ></a>
+
     <h3>聯絡我們</h3>
     <h3>電話：0800-9487946</h3>
     <h3>信箱：12345678@gmail.com</h3>
