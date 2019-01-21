@@ -1,5 +1,9 @@
-from django.shortcuts import render
-
+from django.shortcuts import render,redirect
+from django.contrib.auth import authenticate
+from django.contrib.auth import login as auth_login
+from django.contrib import messages
+from account.forms import UserForm
+from django.contrib.auth import logout as auth_logout
 
 def main(request):
     '''
@@ -63,21 +67,58 @@ def contacted(request):
     return render(request, 'mained/contacted.html')
 def register(request):
     '''
-    Render the register page
+    Register a new user
     '''
-    return render(request, 'register/register.html')
+    template = 'account/register.html'
+    if request.method == 'GET':
+        return render(request, template, {'userForm':UserForm()})
+
+    # POST
+    userForm = UserForm(request.POST)
+    if not userForm.is_valid():
+        return render(request, template, {'userForm':userForm})
+
+    userForm.save()
+    messages.success(request, '歡迎註冊')
+    return redirect('mained:mained')
 def add(request):
     '''
     Render the add page
     '''
     return render(request, 'mained/add.html')
-def login(request):
-    '''
-    Render the login page
-    '''
-    return render(request, 'login/login.html')
 def logined(request):
     '''
     Render the logined page
     '''
-    return render(request, 'logined/logined.html')    
+    return render(request, 'logined/logined.html')  
+def logining(request):
+    '''
+    Login an existing user
+    '''
+    template = 'account/logining.html'
+    if request.method == 'GET':
+        return render(request, template)
+
+    # POST
+    username = request.POST.get('username')
+    password = request.POST.get('password')
+    if not username or not password:    # Server-side validation
+        messages.error(request, '請填資料')
+        return render(request, template)
+
+    user = authenticate(username=username, password=password)
+    if not user:    # authentication fails
+        messages.error(request, '登入失敗')
+        return render(request, template)
+
+    # login success
+    auth_login(request, user)
+    messages.success(request, '登入成功')
+    return redirect('mained:mained') 
+def logout(request):
+    '''
+    Logout the user
+    '''
+    auth_logout(request)
+    messages.success(request, '歡迎再度光臨')
+    return redirect('main:main') 

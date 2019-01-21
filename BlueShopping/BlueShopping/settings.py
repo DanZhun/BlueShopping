@@ -42,9 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'login',
     'logined',
-    'register',
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -138,4 +137,4 @@ STATIC_URL = '/static/'
 # For Heroku deployment
 STATIC_ROOT = 'staticfiles'
 
-
+AUTH_USER_MODEL = 'account.User'

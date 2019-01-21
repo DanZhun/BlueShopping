@@ -13,6 +13,7 @@
  <ul id="menu">
 <li><a href="{% url 'mained:mained' %}">
   <img src="{% static 'main/img/logo1.png' %}" title="main" alt="BlueShopping" ></a></li>
+  <li>會員帳號:({{ user.username }})</li>
   <li><a href="{% url 'main:main' %}">登出</a></li>
 	</div></nav>
 <header>

@@ -9,6 +9,9 @@
   <body>
   <a href="{% url 'mained:mained' %}">
   <img src="{% static 'main/img/logo1.png' %}" title="main" alt="BlueShopping" ></a>
+  <li>會員帳號:({{ user.username }})</li>
+  <li><a href="{% url 'main:main' %}">登出</a></li>
+  
 
     <h3>聯絡我們</h3>
     <h3>電話：0800-9487946</h3>
