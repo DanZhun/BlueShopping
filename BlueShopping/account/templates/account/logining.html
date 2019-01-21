@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Blue Shopping</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+{% block heading %}登入{% endblock %}
+{% block content %}
+<form method="post" action="{% url 'account:logining' %}">
+  {% csrf_token %}
+  <p>使用者名稱：<input type="text" name="username"></p>
+  <p>密碼：<input type="password" name="password"></p>
+  <p><input class="btn" type="submit" value="送出"></p>
+  <li><a href="{% url 'account:register' %}">註冊</a>
+</form>
+{% endblock %}
+</body>
+</html>
