@@ -1,1 +1,1 @@
-web: gunicorn BueShopping.wsgi --log-file -
+web: gunicorn BlueShopping.wsgi --log-file -
